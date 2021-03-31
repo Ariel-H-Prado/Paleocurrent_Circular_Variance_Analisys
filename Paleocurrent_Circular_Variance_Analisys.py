@@ -41,7 +41,7 @@ lookup = 'coordinates'
 
 with open(f, 'r') as myFile:
     for num, line in enumerate(myFile, 1):
-        
+        if lookup in line:
 	    linecut.extend([num]) # Adds a value to the "linecut" array which is used to cut only the data and not the header
 		
 
