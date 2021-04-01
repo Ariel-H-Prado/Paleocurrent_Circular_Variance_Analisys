@@ -1,4 +1,4 @@
-Progam to calculate the circular variance from a .kml file
+Program to calculate the circular variance from a .kml file
 
 There are two .py codes. Paleocurrent_Circular_Variance_Analisys.py is the code to be used, Circular_Variance_functions.py is auxiliary.
 
