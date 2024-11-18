@@ -109,7 +109,7 @@ def Interp_PLS(Lat, Lon, PLS):
 		Interp_Lat = np.append(Interp_Lat, Lat[Count_Azim])
 		Interp_Lon = np.append(Interp_Lon, Lon[Count_Azim])
 
-		N_Int = (Dist // Perce)*1 + 1
+		N_Int = int((Dist // Perce)*1 + 1)
 
 		if N_Int == 1:
 
