@@ -23,7 +23,7 @@ from astropy.stats import median_absolute_deviation
 
 Dir = os.getcwd()		# Actual Directory
 
-Arquivo='Brahmaputra_Pandu_scrolls_var'
+Arquivo='Benue_Ibi_scrolls_var'
 
 Extension='.kml'
 
@@ -33,16 +33,16 @@ saida=Dir+"/"+Arquivo+'_dadospalc.txt'
 
 # Read in the file
 with open(f, 'r') as file :
-  filedata = file.read()
+	filedata = file.read()
 
 # Find the word "coordinates" in the .kml file and thus define where the data is to be cut
 linecut=[]
 lookup = 'coordinates'
 
 with open(f, 'r') as myFile:
-    for num, line in enumerate(myFile, 1):
-        if lookup in line:
-	    linecut.extend([num]) # Adds a value to the "linecut" array which is used to cut only the data and not the header
+	for num, line in enumerate(myFile, 1):
+		if lookup in line:
+			linecut.extend([num]) # Adds a value to the "linecut" array which is used to cut only the data and not the header
 		
 
 # Cut .kml data
